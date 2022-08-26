@@ -24,5 +24,10 @@
       <artifactId>mockito-all</artifactId>
       <version>1.10.19</version>
     </dependency>
-  </dependencies></project>
+  </dependencies>
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
+</project>
 
