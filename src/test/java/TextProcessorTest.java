@@ -20,6 +20,15 @@ class TextProcessorTest {
         assertTrue(new TextProcessor().analyse(string).contains(sentence));
     }
 
+    @Test
+    void five_word_sentence() {
+        String string = "Hello this is five words";
+        String sentence = "The text has in total 5 words";
+
+        assertTrue(new TextProcessor().analyse(string).contains(sentence));
+
+    }
+
 
 
 }
