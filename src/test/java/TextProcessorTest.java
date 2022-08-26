@@ -13,7 +13,7 @@ class TextProcessorTest {
     }
 
     @Test
-    void two_word_sentence(){
+    void two_word_sentence() {
         String string = "Hello world";
         String sentence = "The text has in total 2 words";
 
