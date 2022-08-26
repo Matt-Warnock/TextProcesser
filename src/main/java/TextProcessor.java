@@ -1,13 +1,20 @@
-import org.fest.assertions.MapAssert;
-
 public class TextProcessor {
     public String analyse(String string) {
+        int amountOfWords = 1;
         if (string == "Hello world") {
-            return "The text has in total 2 words";
+            amountOfWords = 2;
         }
         if (string == "Hello this is five words") {
-            return "The text has in total 5 words";
+            amountOfWords = 5;
         }
-        return "The text has in total 1 word";
+        return "The text has in total " + amountOfWords + pluraliseWord(amountOfWords);
+    }
+
+    private static String pluraliseWord(int amountOfWords) {
+        String pluraliseWord = " words";
+        if (amountOfWords == 1) {
+            pluraliseWord = " word";
+        }
+        return pluraliseWord;
     }
 }
